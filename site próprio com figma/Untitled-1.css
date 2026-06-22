@@ -1,0 +1,24 @@
+/*Overall*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*Header*/
+header ul li a {
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    
+}
+header ul li{
+    list-style: none;
+}
+/*Mini Banner*/
+.introduction{
+    width: 100%;
+}
+#thy-trio{
+    transform: rotate(270deg) scale(0.3);
+}
