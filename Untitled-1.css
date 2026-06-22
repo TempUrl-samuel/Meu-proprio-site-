@@ -1,0 +1,176 @@
+/*Para todo o site*/
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Pixelify+Sans:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+/*Body*/
+body {
+    background-color: #0B0B3B;
+}
+
+/*Header*/
+header {
+    background-color: #6EFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+#primeira-lista {
+    width: 50%;
+}
+
+#primeira-lista>li {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 2%;
+    font-family: "Pixelify Sans";
+    font-size: 20px;
+    padding-top: 1%;
+}
+
+header>ul>li {
+    list-style: none;
+}
+
+header>ul>li>a {
+    text-decoration: none;
+    color: black;
+}
+
+#nas-bordas {
+    display: flex;
+    justify-content: end;
+    padding-right: 2%;
+}
+
+#nas-bordas>li {
+    text-decoration: none;
+}
+
+/*/Header*/
+/*Introdução - body*/
+
+.introduction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#thy-trio {
+    width: 50%;
+    height: 50vh;
+    text-align: center;
+}
+
+#thy-trio img {
+    object-fit: cover;
+
+}
+
+#fredoom_box {
+    background-image: url(Deltarune_-_User_Interface_-_HUD-removebg-preview\ 2.png);
+    width: 800px;
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+#fredoom_box h1 {
+    color: aliceblue;
+    padding: 5%;
+    font-family: "Jim Nightshade", cursive;
+    font-weight: lighter;
+    font-size: 50px;
+}
+
+/*/Introdução*/
+/*Main Products - body*/
+.main-products {
+    background-image: linear-gradient(#73094D, #00152F);
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3%;
+}
+
+
+#sec-1-preview {
+    padding-bottom: 5%;
+}
+
+#sec-1-preview img {
+    background-color: rgba(240, 248, 255, 0.303);
+    width: 290px;
+    height: 290px;
+}
+
+#sec-1o5-preview img {
+    width: 800px;
+    height: 585px;
+}
+
+#sec-2-preview {
+    padding-bottom: 5%;
+}
+
+#sec-2-preview img {
+    background-color: rgba(240, 248, 255, 0.303);
+    width: 290px;
+    height: 290px;
+}
+
+#Block1{
+    background-color: #FFF200;
+    width: 200px;
+    height: 75px;
+    margin-top: -5%;
+    z-index: 10;
+}
+#Block2{
+    background-color: #FFF200;
+    width: 200px;
+    height: 75px;
+    margin-top: -5%;
+    z-index: 10;
+}
+#Block3{
+    background-color: #FFAEC9;
+    width: 200px;
+    height: 75px;
+    margin-top: -5%;
+    z-index: 10;
+}
+#Block4{
+    background-color: #FFF200 ;
+    width: 200px;
+    height: 75px;
+    margin-top: -5%;
+    z-index: 10;
+}
+#Block5{
+    background-color: #FFF200;
+    width: 200px;
+    height: 75px;
+    margin-top: -5%;
+    z-index: 10;
+}
+/*/Main Products*/
+
+.testegrid{
+    height: 1000px;
+    display: grid;
+grid-template-columns: 100px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#sim {
+    background-color: #d7008c;
+    grid-column: 2 / 5;
+    grid-row: 4 / 6;
+    
+}
