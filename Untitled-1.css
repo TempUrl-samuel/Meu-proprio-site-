@@ -68,8 +68,7 @@ header>ul>li>a {
 }
 
 #thy-trio img {
-    object-fit: cover;
-
+    transform: rotate(-90deg);
 }
 
 #fredoom_box {
@@ -96,6 +95,10 @@ header>ul>li>a {
     display: flex;
     justify-content: space-evenly;
     padding-top: 3%;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 10px 250px 1fr 1fr 1fr 250px 10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 
@@ -107,11 +110,36 @@ header>ul>li>a {
     background-color: rgba(240, 248, 255, 0.303);
     width: 290px;
     height: 290px;
+    grid-column-start: 2;
+}
+
+#Block1 {
+    background-color: #FFF200;
+    width: 200px;
+    height: 75px;
+    margin-top: -5%;
+    z-index: 10;
+}
+
+#Block2 {
+    background-color: #FFF200;
+    width: 200px;
+    height: 75px;
+    margin-top: -5%;
+    z-index: 10;
 }
 
 #sec-1o5-preview img {
     width: 800px;
     height: 585px;
+}
+
+#Block3 {
+    background-color: #FFAEC9;
+    width: 200px;
+    height: 75px;
+    margin-top: -5%;
+    z-index: 10;
 }
 
 #sec-2-preview {
@@ -122,55 +150,27 @@ header>ul>li>a {
     background-color: rgba(240, 248, 255, 0.303);
     width: 290px;
     height: 290px;
+    grid-column-start: 6;
 }
 
-#Block1{
+#Block4 {
     background-color: #FFF200;
     width: 200px;
     height: 75px;
     margin-top: -5%;
     z-index: 10;
 }
-#Block2{
+
+#Block5 {
     background-color: #FFF200;
     width: 200px;
     height: 75px;
     margin-top: -5%;
     z-index: 10;
 }
-#Block3{
-    background-color: #FFAEC9;
-    width: 200px;
-    height: 75px;
-    margin-top: -5%;
-    z-index: 10;
-}
-#Block4{
-    background-color: #FFF200 ;
-    width: 200px;
-    height: 75px;
-    margin-top: -5%;
-    z-index: 10;
-}
-#Block5{
-    background-color: #FFF200;
-    width: 200px;
-    height: 75px;
-    margin-top: -5%;
-    z-index: 10;
-}
+
+
+
+
+
 /*/Main Products*/
-
-.testegrid{
-    height: 1000px;
-    display: grid;
-grid-template-columns: 100px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-
-#sim {
-    background-color: #d7008c;
-    grid-column: 2 / 5;
-    grid-row: 4 / 6;
-    
-}
