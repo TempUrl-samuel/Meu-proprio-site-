@@ -5,7 +5,6 @@
 * {
     margin: 0;
     box-sizing: border-box;
-
 }
 
 /*Body*/
@@ -169,8 +168,22 @@ header>ul>li>a {
     z-index: 10;
 }
 
-
-
-
-
 /*/Main Products*/
+/*Footer*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #496D41;
+}
+
+.Footer-info {
+    display: flex;
+    font-size: 30px;
+}
+
+.Footer-info>h1{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+/*/Footer*/
