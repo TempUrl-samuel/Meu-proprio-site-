@@ -61,24 +61,24 @@ header>ul>li>a {
 }
 
 #thy-trio {
-    width: 735px;
+    width: 1000px;
     height: 534px;
     text-align: center;
 }
 
 #thy-trio img {
+    object-fit: contain;
     width: 735px;
     height: 534px;
-    transform: rotate(-90deg) scale(0.7);
+    transform: rotate(-90deg) scale(1.4);
 }
 
 #fredoom_box {
-    background-image: url(Deltarune_-_User_Interface_-_HUD-removebg-preview\ 2.png);
+    background-image: url(Deltarune_HUD.png);
     width: 800px;
     height: 250px;
     background-size: contain;
     background-repeat: no-repeat;
-
 }
 
 #fredoom_box h1 {
@@ -92,7 +92,7 @@ header>ul>li>a {
 /*/Introdução*/
 /*Main Products - body*/
 .main-products {
-    background-image: linear-gradient(#73094D, #00152F);
+    background-image: linear-gradient(#00152F, #73094D);
     display: flex;
     justify-content: space-evenly;
     padding-top: 3%;
@@ -130,7 +130,7 @@ header>ul>li>a {
 #Block1 h1 {
     font-family: "Pixelify Sans";
     text-align: center;
-    padding-top: 10%;
+    padding-top: 4%;
 }
 
 #Block2 {
@@ -144,7 +144,7 @@ header>ul>li>a {
 #Block2 h1 {
     font-family: "Pixelify Sans";
     text-align: center;
-    padding-top: 10%;
+    padding-top: 4%;
 }
 
 #sec-1o5-preview {
@@ -155,16 +155,17 @@ header>ul>li>a {
 }
 
 #sec-1o5-preview img {
-    width: 800px;
-    height: 585px;
+    width: 100%;
+    height: 80%;
 }
 
 #Middle-Block {
     background-color: #FFAEC9;
-    width: 200px;
-    height: 75px;
+    width: 215px;
+    height: 95px;
     margin-top: -5%;
     z-index: 10;
+    line-height: 5vh;
 }
 
 #Middle-Block h1 {
@@ -198,7 +199,7 @@ header>ul>li>a {
 #Block4 h1 {
     font-family: "Pixelify Sans";
     text-align: center;
-    padding-top: 10%;
+    padding-top: 4%;
 }
 
 #Block5 {
@@ -213,16 +214,35 @@ header>ul>li>a {
 #Block5 h1 {
     font-family: "Pixelify Sans";
     text-align: center;
-    padding-top: 10%;
+    padding-top: 4%;
 }
 
 /*/Main Products*/
 /*Email In Rebate*/
-.email-in-rebate{
+.email-in-rebate {
     background-color: #496D41;
     border: #02E400, #016956;
     border-radius: 1%;
 }
+
+#caixa-prizes {
+    background-image: url(Deltarune_HUD.png);
+    width: 800px;
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "";
+}
+
+#caixa-prizes h1 {
+    color: aliceblue;
+    padding: 10%;
+    font-family: "Jim Nightshade", cursive;
+    font-weight: lighter;
+    font-size: 50px;
+}
+
 /*/Email In Rebate*/
 
 
