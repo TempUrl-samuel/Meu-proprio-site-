@@ -69,7 +69,7 @@ header>ul>li>a {
 #thy-trio img {
     width: 735px;
     height: 534px;
-    transform: rotate(-90deg)  scale(0.7);
+    transform: rotate(-90deg) scale(0.7);
 }
 
 #fredoom_box {
@@ -127,12 +127,24 @@ header>ul>li>a {
     z-index: 10;
 }
 
+#Block1 h1 {
+    font-family: "Pixelify Sans";
+    text-align: center;
+    padding-top: 10%;
+}
+
 #Block2 {
     background-color: #FFF200;
     width: 200px;
     height: 75px;
     margin-top: -5%;
     z-index: 10;
+}
+
+#Block2 h1 {
+    font-family: "Pixelify Sans";
+    text-align: center;
+    padding-top: 10%;
 }
 
 #sec-1o5-preview {
@@ -147,12 +159,17 @@ header>ul>li>a {
     height: 585px;
 }
 
-#Block3 {
+#Middle-Block {
     background-color: #FFAEC9;
     width: 200px;
     height: 75px;
     margin-top: -5%;
     z-index: 10;
+}
+
+#Middle-Block h1 {
+    font-family: "Pixelify Sans";
+    text-align: center;
 }
 
 #sec-2-preview {
@@ -178,15 +195,38 @@ header>ul>li>a {
     z-index: 10;
 }
 
+#Block4 h1 {
+    font-family: "Pixelify Sans";
+    text-align: center;
+    padding-top: 10%;
+}
+
 #Block5 {
     background-color: #FFF200;
     width: 200px;
     height: 75px;
     margin-top: -5%;
     z-index: 10;
+
+}
+
+#Block5 h1 {
+    font-family: "Pixelify Sans";
+    text-align: center;
+    padding-top: 10%;
 }
 
 /*/Main Products*/
+/*Email In Rebate*/
+.email-in-rebate{
+    background-color: #496D41;
+    border: #02E400, #016956;
+    border-radius: 1%;
+}
+/*/Email In Rebate*/
+
+
+
 /*Footer*/
 footer {
     display: flex;
