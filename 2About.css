@@ -1,0 +1,199 @@
+/*Para todo o site*/
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Jersey+25&display=swap');
+/*font-family: "Jersey 25", sans-serif;*/
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    zoom: 0.95;
+}
+
+/*Body*/
+body {
+    background-image: url(N-background\ pattern.png);
+    background-repeat: repeat;
+}
+
+/*Header*/
+header {
+    background-color: #6EFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+#primeira-lista {
+    width: 50%;
+}
+
+#primeira-lista>li {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 2%;
+    font-family: "Pixelify Sans";
+    font-size: 20px;
+    padding-top: 1%;
+}
+
+header>ul>li {
+    list-style: none;
+}
+
+header>ul>li>a {
+    text-decoration: none;
+    color: black;
+}
+
+#nas-bordas {
+    display: flex;
+    justify-content: end;
+    padding-right: 2%;
+}
+
+#nas-bordas>li {
+    text-decoration: none;
+}
+
+/*/Header*/
+/*espacamento*/
+#espacamento {
+    margin: 5%;
+}
+
+/*Introdução - body*/
+.introduction {
+    display: flex;
+    justify-content: center;
+    padding-top: 2.5%;
+}
+
+/*   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}*/
+
+#fredoom_box {
+    background-image: url(Deltarune_HUD.png);
+    width: 800px;
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+#fredoom_box h1 {
+    color: aliceblue;
+    padding: 5%;
+    font-family: "Jim Nightshade", cursive;
+    font-weight: lighter;
+    font-size: 50px;
+}
+
+/*/Introdução*/
+/*Main Products - body*/
+.main-products {
+    background-image: linear-gradient(#00152F, #73094D);
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3%;
+    height: 1000px;
+    display: grid;
+    grid-template-areas: "sec01 sec1_5 sec02"
+        "sec01 sec1_5 sec02";
+}
+
+
+#sec-1-preview {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+    align-items: center;
+    grid-area: sec01;
+}
+
+#sec-1-preview img {
+    background-color: rgba(240, 248, 255, 0.303);
+    width: 290px;
+    height: 290px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+/*NAO CONSIGO ARRUMAR PARA FICAR DENTRO DA CAIXA DE TEXTO-------*/
+#mensagem {
+    background-image: url(Deltarune_HUD.png);
+    background-repeat: no-repeat;
+    background-position: 25%;
+    background-size: contain;
+    color: white;
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 100;
+    width: 60%;
+}
+
+#mensagem h2 {
+    padding: 1%;
+    padding-top: 5%;
+}
+
+/*/Main Products*/
+/*Email-in-rebate*/
+
+/*/Email-in-rebate*/
+/*Footer*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(#496D41, #000B24);
+}
+
+#Footer-info {
+    display: flex;
+    font-size: 30px;
+    flex-direction: row;
+    padding-top: 5%;
+}
+
+#Footer-info>ul>li {
+    font-size: 45px;
+    text-decoration: none;
+    color: white;
+    font-family: "Jersey 25", sans-serif;
+    margin-bottom: 5%;
+}
+
+.testi1 {
+    list-style: none;
+    text-align: center;
+    padding-left: 1%;
+}
+
+.testi2 {
+    list-style: none;
+    text-align: center;
+    padding-left: 1%;
+}
+
+#Footer-info h1 {
+    font-family: "Jersey 25", sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: 100;
+}
+
+#Footer-info h1 a {
+    color: #FFAEC9;
+}
+
+#footer-img {
+    background-image: url(incon-nobg.png);
+    width: 200px;
+    height: 450px;
+    padding-right: 30%;
+    transform: scale(0.8);
+}
+
+/*/Footer*/

@@ -1,0 +1,291 @@
+/*Para todo o site*/
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Jersey+25&display=swap');
+
+/*font-family: "Jersey 25", sans-serif;*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+    zoom: 0.95;
+}
+
+/*Body*/
+body {
+    background-image: url(N-background\ pattern.png);
+    background-repeat: repeat;
+}
+
+/*Header*/
+header {
+    position: sticky;
+    z-index: 10;
+    background-color: #6EFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+#primeira-lista {
+    width: 50%;
+}
+
+#primeira-lista>li {
+    z-index: 10;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 2%;
+    font-family: "Pixelify Sans";
+    font-size: 20px;
+    padding-top: 1%;
+}
+
+header>ul>li {
+    z-index: 10;
+    list-style: none;
+}
+
+header>ul>li>a {
+    z-index: 10;
+    text-decoration: none;
+    color: black;
+}
+
+#nas-bordas {
+    display: flex;
+    justify-content: end;
+    padding-right: 2%;
+}
+
+#nas-bordas>li {
+    text-decoration: none;
+}
+
+/*/Header*/
+/*espacamento*/
+#espacamento {
+    margin: 5%;
+}
+
+/*Introdução - body*/
+
+.introduction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#thy-trio {
+    z-index: 1;
+    width: 1000px;
+    height: 534px;
+    text-align: center;
+}
+
+#thy-trio img {
+    z-index: 1;
+    object-fit: contain;
+    width: 735px;
+    height: 534px;
+    transform: rotate(-90deg) scale(1.4);
+}
+
+#fredoom_box {
+    background-image: url(Deltarune_HUD.png);
+    width: 800px;
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#fredoom_box h1 {
+    color: aliceblue;
+    padding: 5%;
+    font-family: "Jim Nightshade", cursive;
+    font-weight: lighter;
+    font-size: 50px;
+}
+
+/*/Introdução*/
+/*Main Products - body*/
+.main-products {
+    background-image: linear-gradient(#00152F, #73094D);
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3%;
+    height: 1000px;
+    display: grid;
+    grid-template-areas: "sec01 sec1_5 sec02"
+        "sec01 sec1_5 sec02";
+}
+
+
+#sec-1-preview {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+    align-items: center;
+    grid-area: sec01;
+}
+
+#sec-1-preview img {
+    background-color: rgba(240, 248, 255, 0.303);
+    width: 290px;
+    height: 290px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+#Block1 {
+    background-color: #FFF200;
+    width: 200px;
+    height: 75px;
+    margin-top: -5%;
+    z-index: 10;
+}
+
+#Block1 h1 {
+    font-family: "Pixelify Sans";
+    text-align: center;
+    padding-top: 4%;
+}
+
+#Block2 {
+    background-color: #FFF200;
+    width: 200px;
+    height: 75px;
+    margin-top: -5%;
+    z-index: 10;
+}
+
+#Block2 h1 {
+    font-family: "Pixelify Sans";
+    text-align: center;
+    padding-top: 4%;
+}
+
+#sec-1o5-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: sec1_5;
+}
+
+#sec-1o5-preview img {
+    width: 100%;
+    height: 80%;
+}
+
+#Middle-Block {
+    background-color: #FFAEC9;
+    width: 215px;
+    height: 95px;
+    margin-top: -5%;
+    z-index: 10;
+    line-height: 5vh;
+}
+
+#Middle-Block h1 {
+    font-family: "Pixelify Sans";
+    text-align: center;
+}
+
+#sec-2-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+    grid-area: sec02;
+}
+
+#sec-2-preview img {
+    background-color: rgba(240, 248, 255, 0.303);
+    width: 290px;
+    height: 290px;
+    grid-column-start: 6;
+}
+
+#Block4 {
+    background-color: #FFF200;
+    width: 200px;
+    height: 75px;
+    margin-top: -5%;
+    z-index: 10;
+}
+
+#Block4 h1 {
+    font-family: "Pixelify Sans";
+    text-align: center;
+    padding-top: 4%;
+}
+
+#Block5 {
+    background-color: #FFF200;
+    width: 200px;
+    height: 75px;
+    margin-top: -5%;
+    z-index: 10;
+
+}
+
+#Block5 h1 {
+    font-family: "Pixelify Sans";
+    text-align: center;
+    padding-top: 4%;
+}
+
+/*/Main Products*/
+/*Footer*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(#496D41, #000B24);
+}
+
+#Footer-info {
+    display: flex;
+    font-size: 30px;
+    flex-direction: row;
+    padding-top: 5%;
+}
+
+#Footer-info>ul>li {
+    font-size: 45px;
+    text-decoration: none;
+    color: white;
+    font-family: "Jersey 25", sans-serif;
+    margin-bottom: 5%;
+}
+
+.testi1 {
+    list-style: none;
+    text-align: center;
+    padding-left: 1%;
+}
+
+.testi2 {
+    list-style: none;
+    text-align: center;
+    padding-left: 1%;
+}
+
+#Footer-info h1 {
+    font-family: "Jersey 25", sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: 100;
+}
+
+#Footer-info h1 a {
+    color: #FFAEC9;
+}
+
+#footer-img {
+    background-image: url(incon-nobg.png);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 450px;
+    padding-right: 20%;
+    transform: scale(0.9);
+}
+
+/*/Footer*/
