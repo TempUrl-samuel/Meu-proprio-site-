@@ -1,0 +1,262 @@
+/*Para todo o site*/
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Jersey+25&display=swap');
+/*font-family: "Jersey 25", sans-serif;*/
+/*font-family: "Pixelify Sans", sans-serif;*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    zoom: 0.95;
+}
+
+/*Body*/
+body {
+    background-image: url(4-Background-2.png);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+/*Header*/
+header {
+    background-color: #6EFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+#primeira-lista {
+    width: 50%;
+}
+
+#primeira-lista>li {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 2%;
+    font-family: "Pixelify Sans";
+    font-size: 20px;
+    padding-top: 1%;
+}
+
+header>ul>li {
+    list-style: none;
+}
+
+header>ul>li>a {
+    text-decoration: none;
+    color: black;
+}
+
+#nas-bordas {
+    display: flex;
+    justify-content: end;
+    padding-right: 2%;
+}
+
+#nas-bordas>li {
+    text-decoration: none;
+}
+
+/*/Header*/
+/*espacamento*/
+#espacamento {
+    margin: 5%;
+}
+
+/*Introdução - body*/
+.introduction {
+    display: flex;
+    justify-content: center;
+    padding-top: 2.5%;
+}
+
+/*   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}*/
+
+#fredoom_box {
+    background-image: url(Deltarune_HUD.png);
+    width: 800px;
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+#fredoom_box h1 {
+    color: aliceblue;
+    padding: 5%;
+    font-family: "Jim Nightshade", cursive;
+    font-weight: lighter;
+    font-size: 45px;
+}
+
+/*/Introdução*/
+/*Main Products - body*/
+.main-products {
+    background-image: linear-gradient(#00152F, #73094D);
+    padding-top: 3%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 3%;
+}
+
+
+
+#sec-1-preview img {
+    background-color: rgba(240, 248, 255, 0.303);
+    width: 290px;
+    height: 290px;
+}
+
+/*NAO CONSIGO ARRUMAR PARA FICAR DENTRO DA CAIXA DE TEXTO-------*/
+#mensagem {
+    background-image: url(Deltarune_HUD.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 10;
+    width: 50%;
+    height: 300px;
+}
+
+#mensagem h2 {
+    font-weight: 100;
+    font-size: 35px;
+    padding-left: 5%;
+    padding-right: 15%;
+    padding-top: 5%;
+}
+
+#teste {
+    grid-area: sec02;
+}
+
+/*/Main Products*/
+/*Email-in-rebate*/
+
+.Email-in-rebate {
+    background-image: linear-gradient(#F3C976, #CB9E3D);
+    border: #02E400;
+    display: flex;
+    padding: 2%;
+}
+
+form {
+    display: grid;
+    width: 40%;
+}
+
+/*TAMANHO DA FONTE NAO ESTA ALTERANDO.--------------------------------------*/
+
+#prizing {
+    background-image: url(Deltarune_HUD.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+    padding: 5%;
+}
+
+.genero-equality {
+    width: 1140px;
+    position: relative;
+}
+
+.dropdown-genero {
+    display: none;
+    position: absolute;
+}
+
+#imagem-preview-merch img {
+    width: 1200px;
+    height: 800px;
+}
+
+/*TAMANHO DOS ITENS DA CAIXA DE GENERO IMUTAVEIS DE TAMANHO--------------------------------------------*/
+.genero-equality:hover .dropdown-genero {
+    display: block;
+    width: 100px;
+    height: 70px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 30px;
+    color: gray;
+}
+
+.toggle-genero {
+    cursor: pointer;
+}
+
+.dropdown-genero.show {
+    display: block;
+}
+
+#caixa {
+    width: 700px;
+    height: 70px;
+    text-align: center;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 30px;
+    color: gray;
+}
+
+/*/Email-in-rebate*/
+/*Footer*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(#496D41, #000B24);
+}
+
+#Footer-info {
+    display: flex;
+    font-size: 30px;
+    flex-direction: row;
+    padding-top: 5%;
+}
+
+#Footer-info>ul>li {
+    font-size: 45px;
+    text-decoration: none;
+    color: white;
+    font-family: "Jersey 25", sans-serif;
+    margin-bottom: 5%;
+}
+
+.testi1 {
+    list-style: none;
+    text-align: center;
+    padding-left: 1%;
+}
+
+.testi2 {
+    list-style: none;
+    text-align: center;
+    padding-left: 1%;
+}
+
+#Footer-info h1 {
+    font-family: "Jersey 25", sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: 100;
+}
+
+#Footer-info h1 a {
+    color: #FFAEC9;
+}
+
+#footer-img {
+    background-image: url(incon-nobg.png);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 450px;
+    padding-right: 20%;
+    transform: scale(0.9);
+}
+
+/*/Footer*/
