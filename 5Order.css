@@ -1,19 +1,16 @@
-/*Para todo o site*/
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Pixelify+Sans:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bytesized&family=Jersey+25&display=swap');
-/*font-family: "Jersey 25", sans-serif;*/
-/*font-family: "Pixelify Sans", sans-serif;*/
 
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    zoom: 0.95;
 }
 
-/*Body*/
 body {
-    background-image: url(4-Background-2.png);
+    font-family: sans-serif;
+    background-image: url('4-Background-2.png');
     background-repeat: repeat;
     background-size: cover;
 }
@@ -58,199 +55,312 @@ header>ul>li>a {
 }
 
 /*/Header*/
-/*espacamento*/
+/* Espaçamento */
 #espacamento {
     margin: 5%;
 }
 
-/*Introdução - body*/
+/* Introdução (Caixa HUD) */
 .introduction {
     display: flex;
     justify-content: center;
-    padding-top: 2.5%;
+    padding: 30px 5%;
 }
 
-/*   
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}*/
-
 #fredoom_box {
-    background-image: url(Deltarune_HUD.png);
-    width: 800px;
-    height: 250px;
-    background-size: contain;
+    background-image: url('Deltarune_HUD.png');
+    background-size: 100% 100%;
+    background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
+    max-width: 800px;
+    min-height: 150px;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 #fredoom_box h1 {
     color: aliceblue;
-    padding: 5%;
     font-family: "Jim Nightshade", cursive;
     font-weight: lighter;
-    font-size: 50px;
+    font-size: 40px;
+    text-align: center;
 }
 
-/*/Introdução*/
 
-/*Main Products - body*/
 .main-products {
-    background-image: linear-gradient(#00152F, #73094D);
-    padding-top: 3%;
+    background-image: linear-gradient(to right, #131438, #5a1140);
+    padding: 40px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+#sec-1-preview {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.title-container {
+    background-color: black;
+    border: 3px solid white;
+    padding: 15px 30px;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.title-container h1 {
+    font-family: "Jim Nightshade", cursive;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.title-container h1 img {
+    height: 7vw;
+    max-width: 100%;
+    margin: 5px 0;
+}
+
+#itaibagme {
+    width: 100%;
+    max-width: 250px;
     height: auto;
+}
+
+/* Coluna da Direita (Painel de Itens) */
+#mensagem {
+    flex: 2 1 400px;
+    /* Cresce o dobro, mas quebra se menor que 400px */
+    background-color: black;
+    border: 4px solid white;
+    padding: 50px 20px 70px 20px;
+    /* Espaço extra embaixo para o botão OVER */
+    position: relative;
     display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 3%;
+    justify-content: center;
 }
 
-#sec-1-preview img {
-    width: 290px;
-    height: 290px;
-}
-
-#mensagem{
+.grid-itens {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
 }
 
-#mensagem h2 {
-    font-weight: 100;
-    font-size: 35px;
-    padding-left: 5%;
-    padding-right: 15%;
-    padding-top: 5%;
+.item-row {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 10px;
 }
 
-#caixa-pedido{
-    width: 207px;
-    height: 207px;
-    background-color: #666666;
+.caixa-pedido {
+    width: 70px;
+    height: 70px;
+    background-color: #cccccc;
 }
 
-/*/Main Products*/
-/*Email-in-rebate*/
+.linha {
+    height: 2px;
+    background-color: white;
+    width: 100%;
+}
 
+.botoes {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+}
+
+.botoes button {
+    border: none;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 11px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-add {
+    background-color: #ff99cc;
+    border-radius: 15px 15px 0 0;
+    color: black;
+}
+
+.btn-remove {
+    background-color: #ffea00;
+    color: black;
+}
+
+/* Botão OVER */
+#btn-over {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #00b33c;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+#btn-over img {
+    height: 70px;
+    max-width: 100%;
+    display: block;
+}
+
+/* Email-in-rebate Flexível */
 .Email-in-rebate {
     background-color: #496D41;
-    border: #02E400;
     display: flex;
-    padding: 2%;
+    flex-wrap: wrap;
+    /* Permite ficar um embaixo do outro no mobile */
+    padding: 40px 5%;
+    gap: 30px;
+    align-items: center;
 }
 
 form {
-    display: grid;
-    width: 40%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 350px;
+    /* Flexbox mágico */
+    gap: 15px;
 }
 
-/*TAMANHO DA FONTE NAO ESTA ALTERANDO.------------------------------------------*/
-
-
 #prizing {
-    background-image: url(Deltarune_HUD.png);
+    background-image: url('Deltarune_HUD.png');
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-size: contain;
     color: white;
-    padding: 5%;
+    padding: 15px;
+    text-align: center;
+}
+
+.caixa {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 22px;
+    color: gray;
+    background-color: white;
+    border: none;
+    cursor: pointer;
 }
 
 .genero-equality {
-    width: 1140px;
+    width: 100%;
     position: relative;
 }
 
 .dropdown-genero {
     display: none;
     position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.genero-equality:hover .dropdown-genero {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-item {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 20px;
+    color: gray;
+    background-color: white;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+#imagem-preview-merch {
+    flex: 1 1 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #imagem-preview-merch img {
-    width: 1150px;
-    height: 800px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
-
-/*TAMANHO DOS ITENS DA CAIXA DE GENERO IMUTAVEIS DE TAMANHO--------------------------------------------*/
-.genero-equality:hover .dropdown-genero {
-    display: block;
-    width: 100px;
-    height: 70px;
-    font-family: "Pixelify Sans", sans-serif;
-    font-size: 30px;
-    color: gray;
-}
-
-.toggle-genero {
-    cursor: pointer;
-}
-
-.dropdown-genero.show {
-    display: block;
-}
-
-#caixa {
-    width: 700px;
-    height: 70px;
-    text-align: center;
-    font-family: "Pixelify Sans", sans-serif;
-    font-size: 30px;
-    color: gray;
-}
-
-/*/Email-in-rebate*/
-/*Footer*/
+/* Footer Responsivo */
 footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     background-image: linear-gradient(#496D41, #000B24);
+    padding: 40px 5%;
+    gap: 30px;
 }
 
 #Footer-info {
     display: flex;
-    font-size: 30px;
-    flex-direction: row;
-    padding-top: 5%;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex: 1 1 300px;
 }
 
-#Footer-info>ul>li {
-    font-size: 45px;
-    text-decoration: none;
+#Footer-info ul {
+    list-style: none;
+    flex: 1 1 250px;
+}
+
+#Footer-info ul li {
+    font-size: 26px;
+    /* Ajustado para caber melhor */
     color: white;
     font-family: "Jersey 25", sans-serif;
-    margin-bottom: 5%;
+    margin-bottom: 10px;
 }
 
-.testi1 {
-    list-style: none;
-    text-align: center;
-    padding-left: 1%;
-}
-
-.testi2 {
-    list-style: none;
-    text-align: center;
-    padding-left: 1%;
-}
-
-#Footer-info h1 {
+.contact-footer h1 {
     font-family: "Jersey 25", sans-serif;
     color: white;
-    text-align: center;
     font-weight: 100;
+    font-size: 35px;
 }
 
-#Footer-info h1 a {
+.contact-footer h1 a {
     color: #FFAEC9;
 }
 
 #footer-img {
-    background-image: url(incon-nobg.png);
+    background-image: url('incon-nobg.png');
     background-repeat: no-repeat;
-    width: 200px;
-    height: 450px;
-    padding-right: 20%;
-    transform: scale(0.9);
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    max-width: 180px;
+    height: 180px;
 }
-
-/*/Footer*/

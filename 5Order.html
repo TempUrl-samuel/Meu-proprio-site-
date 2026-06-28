@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Check Out - Finances</title>
     <link rel="stylesheet" href="5Order.css">
 </head>
 
@@ -18,54 +18,85 @@
             <li><a href="5Order.html">Orders</a></li>
         </ul>
         <div id="nas-bordas">
-            <img src="incon.png">
+            <img src="incon.png" alt="Incon Logo">
         </div>
     </header>
+
     <section class="introduction">
         <div id="fredoom_box">
             <h1>CHECK OUT PAGE, TO SEE YOUR [[FINANCES]]</h1>
         </div>
     </section>
+
     <section class="main-products">
+        
         <div id="sec-1-preview">
-            <img src="4-Tenna-pin-happy.png">
+            <div class="title-container">
+                <h1>ALL OF YOUR <img src="5-Tenna_funnytext_amazing.png"> ITEMS!!</h1>
+            </div>
+            <img id="itaibagme" src="4-Tenna-pin-happy.png" alt="Personagem Tenna">
         </div>
+
+        
         <div id="mensagem">
-            <ul>
-                <div id="caixa-pedido"></div>
-                <hr>
-                <div id="add"></div>
-                <div id="remove"></div>
-            </ul>
-            <ul>
-                <div id="caixa-pedido"></div>
-                <hr>
-                <div id="add"></div>
-                <div id="remove"></div>
-            </ul>
-            <ul>
-                <div id="caixa-pedido"></div>
-                <hr>
-                <div id="add"></div>
-                <div id="remove"></div>
-            </ul>
-            <ul>
-                <div id="caixa-pedido"></div>
-                <hr>
-                <div id="add"></div>
-                <div id="remove"></div>
-            </ul>
+            <div class="grid-itens">
+                
+                <div class="item-row">
+                    <div class="caixa-pedido"></div>
+                    <div class="linha"></div>
+                    <div class="botoes">
+                        <button class="btn-add">ADD!!</button>
+                        <button class="btn-remove">remove.</button>
+                    </div>
+                </div>
+
+                
+                <div class="item-row">
+                    <div class="caixa-pedido"></div>
+                    <div class="linha"></div>
+                    <div class="botoes">
+                        <button class="btn-add">ADD!!</button>
+                        <button class="btn-remove">remove.</button>
+                    </div>
+                </div>
+
+                
+                <div class="item-row">
+                    <div class="caixa-pedido"></div>
+                    <div class="linha"></div>
+                    <div class="botoes">
+                        <button class="btn-add">ADD!!</button>
+                        <button class="btn-remove">remove.</button>
+                    </div>
+                </div>
+
+                
+                <div class="item-row">
+                    <div class="caixa-pedido"></div>
+                    <div class="linha"></div>
+                    <div class="botoes">
+                        <button class="btn-add">ADD!!</button>
+                        <button class="btn-remove">remove.</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <button id="btn-over">
+                <img src="6-OVER.png" alt="Over Button">
+            </button>
         </div>
     </section>
-    <div id="espacamento">
-    </div>
+
+    <div id="espacamento"></div>
+
     <section class="Email-in-rebate">
         <form>
             <h3 id="prizing">WANT TO [[KNOW US BETTER]]? EMAIL US!</h3>
-            <input id="caixa" type="email" placeholder="Enter Your [[EMAIL IN REBATE]]">
-            <input id="caixa" type="password" placeholder="Enter Your [[SECRET CODE]]">
+            <input class="caixa" type="email" placeholder="Enter Your [[EMAIL IN REBATE]]">
+            <input class="caixa" type="password" placeholder="Enter Your [[SECRET CODE]]">
             <div class="genero-equality">
-                <button id="caixa" class="toggle-genero" type="button" id="butao-genero" data-toggle="dropdown">
+                <button class="caixa toggle-genero" type="button" data-toggle="dropdown">
                     Enter Your [[GENDER EQUALITY]]
                 </button>
                 <div class="dropdown-genero">
@@ -74,16 +105,17 @@
                     <button class="dropdown-item" type="button">PREFER NOT TO SAY</button>
                 </div>
             </div>
-            <button id="caixa">
+            <button class="caixa" type="submit">
                 TO [[PROCEED]] PRESS HERE
             </button>
         </form>
         <div id="imagem-preview-merch">
-            <img src="3-cozyhome-no-Y&P-strands.png">
+            <img src="3-cozyhome-no-Y&P-strands.png" alt="Deltarune Merch">
         </div>
     </section>
-    <div id="espacamento">
-    </div>
+
+    <div id="espacamento"></div>
+
     <footer>
         <div id="Footer-info">
             <ul class="testi1">
@@ -94,9 +126,12 @@
                 <li>CNPJ: <br> 71.3X5.5X6.27X6.1X</li>
                 <li>2026-2069 <br> incon.enterprise</li>
             </ul>
-            <h1> Contact Us <a href="Contact.html">Here!</a></h1>
+            <div class="contact-footer">
+                <h1> Contact Us <a href="Contact.html">Here!</a></h1>
+            </div>
         </div>
         <div id="footer-img">
+            <!-- Imagem via CSS -->
         </div>
     </footer>
 </body>
